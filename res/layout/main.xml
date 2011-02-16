@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <EditText android:id="@+id/inputBox"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:hint="Enter the URL here"/>
+    
+    <Button android:id="@+id/fetchItems"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Go Fetch!"
+    android:layout_below="@id/inputBox"/>
+    
+    <ListView android:id="@+id/itemsList"
+    android:layout_below="@id/fetchItems"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"/>
+
+</RelativeLayout>
